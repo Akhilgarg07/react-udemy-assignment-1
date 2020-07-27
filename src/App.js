@@ -21,12 +21,19 @@ class App extends Component {
   }
 
   render(){
+    // const style = {
+    //   backgroundColor: 'black',
+    //   font: 'inherit',
+    //   border: '5px solid black',
+    //   padding: '10px auto'
+    // };
   return (
     <div className="App">
-      <h1>Assignment 1</h1>
+      <h1 className='headingFor'>Assignment 1</h1>
       <UserOutput username={this.state.useroutput[0].username} age={this.state.useroutput[0].age}/>
       <UserOutput username={this.state.useroutput[1].username} age={this.state.useroutput[1].age} changed={this.usernameChangedHandler}/>
-      <UserInput username={this.state.useroutput[1].username} click={this.usernameChangedHandler}/>
+      <UserInput 
+        username={this.state.useroutput[1].username} click={this.usernameChangedHandler}/>
     </div>
   );
 }

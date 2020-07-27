@@ -1,0 +1,9 @@
+.Output {
+    width: 70%;
+    margin: 20px auto;
+    border: 3px solid #FF5733;
+    box-shadow: 1px 2px 3px #ccc;
+    padding: 16px;
+    text-align: center;
+
+}
